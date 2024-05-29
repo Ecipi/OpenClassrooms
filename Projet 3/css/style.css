@@ -13,10 +13,32 @@
     color: var(--main-color);
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 1.25rem;
+}
+
 body {
     display: flex;
     justify-content: center;
 }
+
+.filters {
+    display: flex;
+    justify-content: start;
+}   
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    align-items: center;
+}  
 
 .main-container {
     width: 100%;
