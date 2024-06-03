@@ -49,7 +49,7 @@ body {
 
 .hightlight {
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 /* Destination */
@@ -69,7 +69,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 3.125rem;
-
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
 }
@@ -81,6 +80,11 @@ body {
     font-size: 1.125rem;
     font-weight: bold;
     padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+}
+
+.search-bar input::placeholder {
+    font-weight: 900;
+    color: black;
 }
 
 .search-bar button {
@@ -118,6 +122,24 @@ body {
 
 .filters button:hover {
     background-color: var(--filter-bg-color);
+}
+
+
+.p_infos {
+    display: flex;
+    align-items: center;
+}
+
+.p_infos i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #D9D9D9 1px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    margin-right: 10px;
 }
 
 .main-container {
@@ -165,6 +187,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 
 .hebergements-and-populaires section {
