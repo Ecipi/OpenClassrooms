@@ -128,14 +128,15 @@ header {
   }
   
   .search-bar input {
-    width: 13.4rem;
+    width: 14rem;
     background-color: white;
     border: var(--main-bg-color) 2px solid;
     font-size: 18px;
     font-weight: bold;
     padding: 14px 24px 14px 24px;
+    outline: none;
   }
-  
+
   .search-bar input::placeholder {
     font-size: 18px;
     font-weight: bold;
