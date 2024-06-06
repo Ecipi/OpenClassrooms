@@ -175,6 +175,11 @@ header {
     gap: 15px;
     margin-bottom: 35px;
   }
+
+  .filters-buttons {
+    display: flex;
+    gap: 15px;
+  }
   
   .filters button {
     font-size: 17px;
@@ -383,6 +388,17 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filters-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+    
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -413,9 +429,103 @@ footer {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activities-cards .card-content{
+    height: 50px;
+  }  
+
+  .activities-cards img {
+    height: 200px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
-}
+    .search-bar .search {
+        display: none;
+      }
+      
+      .search-bar .search_mobile {
+        display: block;
+        }
+
+    .filters-buttons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        }    
+
+    .filter-bouton {
+        width: 100%;
+        height: 50px;
+    }
+
+    .filters button {
+        font-size: 14px
+      }
+
+    .filters {
+        margin-top: 15px;
+        margin-bottom: 25px;
+      }
+
+    .hebergements-and-populaires section {
+    border-radius: 0px;
+    }      
+
+    .populaires {
+        order: 1;
+    }
+
+    .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    }
+
+    .populaires-cards a {
+    width: 100%;
+    }
+
+    .populaires-cards .card-title {
+    font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+    font-size: 13px;
+    }
+
+    .hebergements-and-populaires .hebergements {  
+        background-color: white;
+    }
+
+    .hebergements {
+        order: 2;
+    }  
+
+    .hebergements-cards {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    }
+    
+    .hebergements-cards .card-title {
+    margin-bottom: 1px;
+    }
+    
+    
+    .hebergements-cards img {
+    width: 100%;
+    height: 120px;;
+    }
+
+}      
