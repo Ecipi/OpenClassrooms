@@ -441,6 +441,33 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        .logo_header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+        
+        
+        nav {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 15px;
+        border-bottom: 2px solid var(--main-bg-color);
+        }
+        
+        nav a:hover {
+            text-decoration-line: underline;
+            text-underline-offset: 20px;
+        }
+    
     .search-bar .search {
         display: none;
       }
@@ -462,7 +489,8 @@ footer {
     }
 
     .filters button {
-        font-size: 14px
+        font-size: 14px;
+        white-space: nowrap;
       }
 
     .filters {
@@ -472,10 +500,11 @@ footer {
 
     .hebergements-and-populaires section {
     border-radius: 0px;
-    }      
-
+    }     
+    
     .populaires {
         order: 1;
+        width: 100%;
     }
 
     .populaires-cards {
@@ -497,12 +526,17 @@ footer {
     font-size: 13px;
     }
 
+    .hebergements-and-populaires section {
+        padding: 10px;
+
+      }
     .hebergements-and-populaires .hebergements {  
         background-color: white;
     }
 
     .hebergements {
         order: 2;
+        width: 100%;
     }  
 
     .hebergements-cards {
@@ -525,7 +559,32 @@ footer {
     
     .hebergements-cards img {
     width: 100%;
+    height: 120px;
+    }
+        
+    .activities-cards {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+    .activities-cards img {
+    width: 100%;
     height: 120px;;
     }
+    
+    .activities-cards .card-content {
+        margin-bottom: -10px;
+      }
 
+    footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    }
+    
+    .menus_footer h3 {
+    margin-bottom: -2px;    
+    }    
 }      
