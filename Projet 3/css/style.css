@@ -527,9 +527,9 @@ footer {
     }
 
     .hebergements-and-populaires section {
-        padding: 10px;
-
+        padding: 30px 5px 30px 5px;
       }
+      
     .hebergements-and-populaires .hebergements {  
         background-color: white;
     }
