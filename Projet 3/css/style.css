@@ -516,6 +516,15 @@ footer {
     margin-top: 60px;
   }
 
+  .search-bar .label {
+    margin-right: -5px;
+  }
+
+  .search-bar input {
+    width: 12rem;
+    padding-left: 15px;
+  }
+
   .search-bar .search {
     display: none;
   }
