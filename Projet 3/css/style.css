@@ -258,8 +258,7 @@ header {
 .hebergements-cards {
   display: grid;
   justify-content: center;
-  grid-template-columns: 32% 32% 32%;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   gap: 15px;
   margin-top: 30px;
@@ -348,7 +347,7 @@ header {
 
 .activities {
   margin-top: 65px;
-  width: 100%;
+  padding: 30px;
 }
 
 .activities .section-title {
@@ -357,10 +356,9 @@ header {
 
 .activities-cards {
   display: grid;
-  grid-template-columns: 22% 22% 22% 22%;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px;
-  justify-content: center;
+
 }
 
 .activities-cards .card {
@@ -391,7 +389,7 @@ header {
 footer {
   background-color: var(--main-bg-color);
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 180px;
   margin-top: 65px;
 }
@@ -475,6 +473,10 @@ footer {
     flex-direction: column;
   }
 
+  .main-container {
+    padding: 0;
+  }
+
   .logo-header {
     display: flex;
     align-items: center;
@@ -514,6 +516,11 @@ footer {
 
   .find-destination {
     margin-top: 60px;
+    padding: 20px;
+  }
+
+  .find-destination-infos {
+    padding: 20px;
   }
 
   .search-bar .label {
@@ -521,7 +528,7 @@ footer {
   }
 
   .search-bar input {
-    width: 12rem;
+    width: 100%;
     padding-left: 15px;
   }
 
@@ -535,14 +542,12 @@ footer {
 
   .filters-buttons {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
   .filter-bouton {
     width: 100%;
-    height: 50px;
   }
 
   .filters button {
@@ -553,10 +558,7 @@ footer {
   .filters {
     margin-top: 15px;
     margin-bottom: 25px;
-  }
-
-  .hebergements-and-populaires section {
-    border-radius: 0px;
+    align-items: stretch;
   }
 
   .populaires {
@@ -580,8 +582,13 @@ footer {
     font-size: 13px;
   }
 
+  .hebergements-and-populaires {
+    margin-top: -20px;
+  }
+
   .hebergements-and-populaires section {
-    padding: 30px 5px 30px 5px;
+    padding: 30px 20px 30px 20px;
+    border-radius: 0px;
   }
 
   .hebergements-and-populaires .hebergements {
@@ -595,6 +602,11 @@ footer {
   .hebergements-cards {
     display: flex;
     flex-direction: column;
+  }
+
+  .activities {
+    padding: 20px;
+    margin-top: 20px;
   }
 
   .activities-cards {
