@@ -490,6 +490,10 @@ footer {
     padding-bottom: 15px;
   }
 
+  .nav-header ul {
+    gap: 0;
+  }
+
   .nav-header li {
     display: block;
     text-align: center;
